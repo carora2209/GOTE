@@ -1,0 +1,15 @@
+
+<div class="house-item"*ngFor="let house of houses">
+ 
+    <a (click) = "onHouseClick(house)">
+        <span class="badge">{{ house.id }}</span>
+        <p><strong>{{ house.name }}</strong></p>
+      </a>
+      
+    
+</div>
+<p-paginator class="foot"
+  [rows]="20"
+  [totalRecords]="444"
+  (onPageChange)="paginate($event)"
+></p-paginator>

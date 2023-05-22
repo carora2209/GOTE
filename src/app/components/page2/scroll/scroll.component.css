@@ -1,0 +1,21 @@
+cdk-virtual-scroll-viewport{
+    height: 800vh;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background:beige;
+  
+}
+li{
+    height: 10px;
+    width: 800px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background:crimson;
+}
+a{
+    color: gold;
+}

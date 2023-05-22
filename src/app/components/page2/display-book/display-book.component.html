@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="data">
+        <h3 class="title"><strong>Book: {{currentBook.name}}</strong></h3>
+        <ul>
+            <li><strong>Author:</strong> {{currentBook.authors[0]}}</li>
+            <li><strong>ISBN code of the book:</strong> {{currentBook.isbn}}</li>
+            <li><strong>Number of Pages:</strong> {{currentBook.numOfPages}}</li>
+            <li><strong>Date of release:</strong> {{currentBook.released}}</li>
+            <li><strong>Type of book:</strong> {{currentBook.mediaType}}</li>
+        </ul>
+    </div>
+    <div class="scroll">
+        <app-scroll [currentBook]="currentBook"></app-scroll>
+    </div>
+</div>
+

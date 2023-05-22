@@ -1,0 +1,79 @@
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>{{ house.name }}</td>
+    </tr>
+    <tr>
+      <th>Region</th>
+      <td>{{ house.region }}</td>
+    </tr>
+    <tr>
+      <th>Coat of Arms</th>
+      <td>{{ house.coatOfArms }}</td>
+    </tr>
+    <tr>
+      <th>Word</th>
+      <td>{{ house.word }}</td>
+    </tr>
+    <tr>
+      <th>Titles</th>
+      <td>{{ house.titles }}</td>
+    </tr>
+    <tr>
+      <th>Seats</th>
+      <td>{{ house.seats }}</td>
+    </tr>
+    <tr>
+      <th>Founded</th>
+      <td>{{ house.founded }}</td>
+    </tr>
+    <tr>
+      <th>Died Out</th>
+      <td>{{ house.diedOut }}</td>
+    </tr>
+    <tr>
+      <th>Ancestral Weapons</th>
+      <td>{{ house.ancestralWeapons }}</td>
+    </tr>
+   
+    <tr>
+        <th >Current Lord</th>
+      <td>
+        <span *ngFor="let lord of house.currentLord">
+          <a (click)="onCharacterClick(lord)">{{ lord }}</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <th>Heir</th>
+      <td><a (click)="onCharacterClick(house.heir)">{{ house.heir }}</a></td>
+    </tr>
+    <tr>
+      <th>Overlord</th>
+      <td><a (click)="onHouseClick(house.overlord)">{{ house.overlord }}</a></td>
+    </tr>
+    
+    <tr>
+    <th >Cadet Branches</th>
+      <td >
+        <span *ngFor="let branch of house.cadetBranches">
+          <a (click)="onHouseClick(branch)">{{ branch }}</a>
+        </span>
+      </td>
+    </tr>
+    
+    <tr>
+    <th >Sworn Members</th>
+      <td >
+        <span *ngFor="let member of house.swornMembers">
+          <a (click)="onCharacterClick(member)">{{ member }}</a>
+          <br>
+        </span>
+      </td>
+    </tr>
+  </table>
+  
+  
+
+

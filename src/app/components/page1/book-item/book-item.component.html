@@ -1,0 +1,38 @@
+<style>
+    .book {
+        background-color: #eab160;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .book h3 {
+        font-size: 24px;
+        margin: 0;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .book button {
+        background-color: #bf7a25;
+        width: 300px;
+        color: #fff;
+        border: 2px solid #382814;
+        padding: 12px 24px;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .book button:hover {
+        background-color: #aa795b;
+        border-color: #aa795b;
+    }
+</style>
+
+<div class="book">
+    <h3>{{book.name}}
+        <button (click)="onClickDetails(book.url)">View Details</button>
+    </h3>
+</div>

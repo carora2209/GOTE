@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+   th{
+      width: 200px;
+      height: 30px;
+      padding: 20px;
+      font-size: 24px;
+      border: 1px solid #d8ba79;
+      white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   }
+  
+  td {
+      font-size: 24px;
+    padding: 10px;
+    border: 1px solid #d2b16b;
+    word-wrap: break-word;
+  }
+  tr{
+      background-color: #f0d792;
+  }
+  tr:nth-child(even) {
+    background-color: #f0e2ba;
+  }
+
+  .clickable-data a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: lightgoldenrodyellow;
+    color: #333;
+  }
+
+ 

@@ -1,0 +1,77 @@
+/*p.Name{
+    text-align: center;
+    font-size: 28px ;
+}
+p{
+    color: black; font-family: 'Source Sans Pro', sans-serif; font-size: 20px; line-height: 32px; margin: 0 0 24px; 
+}
+.clickable-data{
+    background-color: aquamarine;
+  
+
+}
+a{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    
+}
+.name{
+    text-align: center;
+    font-size: 25px;
+}*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F0F7FF;
+}
+
+.data {
+    background-color: #B4C4E2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.data p {
+    font-size: 18px;
+    margin: 10px;
+ 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #D2E0F5;
+}
+
+.data p:nth-child(even) {
+    background-color: #A1B4D9;
+}
+
+.clickable-data {
+    background-color: #D2E0F5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.clickable-data p {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #B4C4E2;
+}
+
+.clickable-data .character-values p,
+.clickable-data .house-values p {
+    margin-bottom: 5px;
+}
+
+.clickable-data .character-values a,
+.clickable-data .house-values a {
+    text-decoration: none;
+}
+
+.clickable-data .character-values p:hover,
+.clickable-data .house-values p:hover {
+    background-color: #D4D4D4;
+}
